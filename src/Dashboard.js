@@ -11,8 +11,8 @@ function Dashboard() {
   const fetchFaults = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/faults"
-      );
+  "https://lt-line-monitoring-system.onrender.com/api/faults"
+);
       setFaults(response.data);
     } catch (error) {
       console.error("Error fetching faults:", error);
@@ -43,9 +43,9 @@ function Dashboard() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/faults",
-        faultData
-      );
+  "http://localhost:5000/api/faults",
+  faultData
+);
 
       alert("⚡ Fault Saved Successfully!");
 

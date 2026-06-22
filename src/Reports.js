@@ -10,7 +10,7 @@ function Reports() {
 
   const fetchReports = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/faults");
+      const res = await axios.get("https://lt-line-monitoring-system.onrender.com/api/faults");
       setFaults(res.data);
     } catch (err) {
       console.log(err);

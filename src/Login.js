@@ -25,7 +25,7 @@ function Login({ onLogin }) {
 
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/auth/signup",
+          "https://lt-line-monitoring-system.onrender.com/api/auth/signup",
           {
             fullName,
             username,
@@ -58,7 +58,7 @@ function Login({ onLogin }) {
 
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/auth/login",
+          "https://lt-line-monitoring-system.onrender.com/api/auth/login",
           {
             username,
             password,

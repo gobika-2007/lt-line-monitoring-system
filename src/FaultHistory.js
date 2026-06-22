@@ -11,7 +11,7 @@ function FaultHistory() {
   const fetchFaults = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/faults"
+        "https://lt-line-monitoring-system.onrender.com/api/faults"
       );
       setFaults(response.data);
     } catch (error) {
@@ -39,7 +39,7 @@ function FaultHistory() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/faults/${id}`
+        `https://lt-line-monitoring-system.onrender.com/api/faults/${id}`
       );
 
       alert("Fault Deleted Successfully");
